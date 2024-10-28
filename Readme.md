@@ -12,7 +12,7 @@ git clone https://
 ```
 #### Navegue até o diretório do projeto
 ```
-cd QAZANDO
+cd AutomacaoAPIREST
 ```
 #### Instale as dependências:
 ```
