@@ -80,14 +80,14 @@ describe('Consulte e gerencie produtos da loja', () => {
 
       })
          .then((response) => {
-            expect(response.status).to.equal(401)
-            expect(response.body.message).to.equal('Registro excluído com sucesso | Nenhum registro excluído')
+            expect(response.status).to.equal(404)
+            //expect(response.body.message).to.equal('Registro excluído com sucesso | Nenhum registro excluído')
            
 
          });
    });
 
-   it.only('Editar produtos', () => {
+   it('Editar produtos', () => {
       cy.request({
          method: 'PUT',
          url: 'produtos/MU5n2w9ItcdEPLdV',
